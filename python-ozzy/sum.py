@@ -1,7 +1,8 @@
 def add(*numbers):
+    total = 0
     
     for num in numbers:
-        total = 0
+        
         total += num
     return total
 
