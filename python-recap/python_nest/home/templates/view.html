@@ -23,12 +23,12 @@
             </th>
 
             <tbody>
-                {% for item in saver_data %}
-                    <td>{{ item }}</td>
-                    <!-- <td>{{ occupation }}</td>
-                    <td>{{ amount }}</td>
-                    <td>{{ date }}</td>
-                    <td>{{ transaction_id }}</td>  -->
+                {% for item in all_data %}
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.occupation }}</td>
+                    <td>{{ item.amount }}</td>
+                    <td>{{ item.date }}</td>
+                    <td>{{ item.transaction_id }}</td> 
 
                 {% endfor %}
             </tbody>
