@@ -56,3 +56,5 @@ class Transaction(models.Model):
     customer_phone = models.TextField()
     comments = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+    

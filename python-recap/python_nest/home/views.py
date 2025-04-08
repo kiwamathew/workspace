@@ -57,3 +57,19 @@ def viewPage(request):
 #     }
 
 #     return render(request, 'view.html', context)
+
+# 8th April 2025 
+def input_form(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        # Store in session
+        request.session['name'] = name
+        request.session['email'] = email
+        return redirect('view_data')  # URL name for the next view
+    return render(request, 'form.html')  # your form template
+
+def view_data(request):
+    name = request.session.get('name')
+    email = request.session.get('email')
+    return render(request, 'view_data.html', {'name': name, 'email': email})
