@@ -73,3 +73,9 @@ def view_data(request):
     name = request.session.get('name')
     email = request.session.get('email')
     return render(request, 'view_data.html', {'name': name, 'email': email})
+
+# 9th april 2025
+
+# Array - User.objects.all() - Everything
+# Object - User.objects.get(pk=5)
+# Array - User.objects.filter(email='', password='')

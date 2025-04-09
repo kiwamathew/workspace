@@ -52,9 +52,9 @@ class Transaction(models.Model):
     # kind = models.CharField(max_length=10) # Buy or Sell
     total_amount = models.IntegerField()
     method = models.CharField(max_length=15) # Cash, Bank, Card, mobile Money, Loyalty
-    customer_name = models.TextField9
+    customer_name = models.TextField()
     customer_phone = models.TextField()
     comments = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
-    
+# 9th April 2025
