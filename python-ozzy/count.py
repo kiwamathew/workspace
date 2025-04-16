@@ -3,7 +3,16 @@
 word = input("Enter your preferred word: ")
 vowels_in_word = []
 for i in word:
-    if i == "a" or "e" or "i" or "o" or "u":
+    if i == "a":
         vowels_in_word.append(i)
-    print(vowels_in_word)
+    elif i == "e":
+        vowels_in_word.append(i)
+    elif i == "i":
+        vowels_in_word.append(i)
+    elif i == "o":
+        vowels_in_word.append(i)
+    elif i == "u":
+        vowels_in_word.append(i)
+        
+print(vowels_in_word)
         
