@@ -13,6 +13,9 @@ for i in word:
         vowels_in_word.append(i)
     elif i == "u":
         vowels_in_word.append(i)
-        
+
 print(vowels_in_word)
+
+number_of_vowels = len(vowels_in_word)
+print(number_of_vowels)
         
